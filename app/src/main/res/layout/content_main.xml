@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_home">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <pl.bclogic.pulsator4droid.library.PulsatorLayout
+            android:id="@+id/pulsator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:pulse_color="@color/colorAccent"
+            app:pulse_count="4"
+            app:pulse_duration="7000"
+            app:pulse_interpolator="Linear"
+            app:pulse_repeat="0"
+            app:pulse_startFromScratch="false"
+            android:layout_marginTop="176dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/scan_qr" />
+
+        </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+
+        <Button
+            android:id="@+id/button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="250dp"
+            android:text="Create Know Me" />
+
+    </LinearLayout>
+
+</LinearLayout>
